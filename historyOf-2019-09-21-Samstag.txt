@@ -1,0 +1,140 @@
+    1  21/09 18:52:54 sudo sh VBOXLinuxAdditions.run
+    2  21/09 18:52:54 ls
+    3  21/09 18:52:54 cd Pictures
+    4  21/09 18:52:54 ls
+    5  21/09 18:52:54 sudo usermod -aG vboxsf <someuserID>
+    6  21/09 18:52:54 sudo usermod -aG vboxsf *
+    7  21/09 18:52:54 whoami
+    8  21/09 18:52:54 sudo adduser stef vboxsf
+    9  21/09 18:52:54 cd ~
+   10  21/09 18:52:54 nano .bashrc
+  106  21/09 18:52:54 npm -v
+  213  21/09 18:52:54 nano .bashrc
+  342  21/09 18:52:54 fintxt
+  413  21/09 18:52:54 ll
+  425  21/09 15:17:51 find -iname [0-9]-*.* -type f -exec rename 's/(-*)h/$1-.*/' {} \;
+  426  21/09 15:17:55 ll
+  427  21/09 15:18:32 find -iname [0-9]-*.* -type f -exec rename 's/(-*.*)h/$1-.*.*/' {} \;
+  428  21/09 15:18:37 ll
+  429  21/09 16:21:21 find . -maxdepth 1 -printf '%CY%Cm%Cd'
+  430  21/09 16:22:07 stat -c "%y"
+  431  21/09 16:22:47 /bin/ls -ls | awk '{print $7,$8,$9}'
+  432  21/09 16:23:26 -ls -man
+  433  21/09 16:23:37 ls -help
+  434  21/09 16:23:46 ls --help
+  435  21/09 16:24:44 stat --help
+  436  21/09 16:25:35 /bin/ls -ls | awk '{print $7,$8,$9}'
+  437  21/09 16:25:49 /bin/ls -ls | awk '{print $7,$8}'
+  438  21/09 16:26:04 find . -maxdepth 1 -printf '%CY%Cm%Cd'
+  439  21/09 16:26:46 find . -maxdepth 1 -printf '_%CY_%Cm_%Cd'
+  440  21/09 16:26:59 find . -maxdepth 1 -printf '_%CY_%Cm_%Cd\n'
+  441  21/09 16:30:17 ls -lc
+  442  21/09 16:32:21 ls -lct
+  443  21/09 16:39:45 /bin/ls -ls | awk '{print $6,$7,$8}'
+  444  21/09 16:40:05 /bin/ls -ls | awk '{print $10,$7,$8}'
+  445  21/09 16:42:02 /bin/ls -ls | awk '{print $10,$7,$8}'ls --full or ls --fu
+  446  21/09 16:42:13 ls --full or ls --fu
+  447  21/09 16:42:28 ls --fu
+  448  21/09 16:46:53 stat --printf='%y'
+  449  21/09 16:47:39 ls --fu | cut -f 6
+  450  21/09 16:48:11 ls --fu | cut -f 6 -d ' '
+  451  21/09 16:48:45 ls --fu | cut -f 6-6 -d ' '
+  452  21/09 16:49:06 ls --fu | cut -f 5-7 -d ' '
+  453  21/09 16:49:31 ls --fu
+  454  21/09 16:50:11 ls --fu | cut -f 7 -d ' '
+  455  21/09 16:50:34 stat --printf='%y'
+  456  21/09 16:50:48 /bin/ls -ls | awk '{print $10,$7,$8}'ls --full or ls --fu
+  457  21/09 16:51:10 /bin/ls -ls | awk '{print $10,$7,$8}'
+  458  21/09 16:51:27 /bin/ls -ls | awk '{print $6,$7,$8}'
+  459  21/09 16:51:46 find . -maxdepth 1 -printf '%CY%Cm%Cd'
+  460  21/09 16:51:54 /bin/ls -ls | awk '{print $10,$7,$8}'
+  461  21/09 16:52:08 /bin/ls -ls | awk '{print $11,$7,$8}'
+  462  21/09 16:55:26 /bin/ls -ls | awk '{print $12,$7,$8}'
+  463  21/09 17:00:56 /bin/ls -ls | awk -F '{print $12,$7,$8}'
+  464  21/09 17:01:24 /bin/ls -ls | awk  '{print $12,$7,$8}'
+  465  21/09 17:02:44 /bin/ls -ls | awk  '{print $2,$7,$8}'
+  466  21/09 17:02:56 /bin/ls -ls | awk  '{print $4,$7,$8}'
+  467  21/09 17:03:05 /bin/ls -ls | awk  '{print $5,$7,$8}'
+  468  21/09 17:03:16 /bin/ls -ls | awk  '{print $6,$7,$8}'
+  469  21/09 17:03:30 /bin/ls -ls | awk  '{print $9,$7,$8}'
+  470  21/09 17:03:39 /bin/ls -ls | awk  '{print $10,$7,$8}'
+  471  21/09 17:03:53 /bin/ls -ls | awk  '{print $11,$7,$8}'
+  472  21/09 17:07:45 /bin/ls -ls | awk  '{print $11,$7,$8}{format = "%m,%d"}'
+  473  21/09 17:12:02 /bin/ls -ls | awk  '{print $11,$7,$8}'
+  474  21/09 17:13:23 /bin/ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txt
+  475  21/09 17:13:29 ll
+  476  21/09 17:15:02 open datesInFolder.txt 
+  477  21/09 17:15:51 xdg-open datesInFolder.txt 
+  478  21/09 17:17:31 awk '!x[$0]++' datesInFolder.txt > singleDatesInFolder.txt
+  479  21/09 17:18:11 xdg-open singleDatesInFolder.txt 
+  480  21/09 18:06:55 /bin/ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txtreser
+  481  21/09 18:06:58 rest
+  482  21/09 18:07:02 reset
+  483  21/09 18:07:29 sed -f repl.txt singleDatesInFolder.txt 
+  484  21/09 18:07:35 ll
+  485  21/09 18:07:48 find -iname rep
+  486  21/09 18:08:03 find -iname "rep"
+  487  21/09 18:08:07 ll
+  488  21/09 18:08:23 reset
+  489  21/09 18:08:28 nautilus .
+  490  21/09 18:10:28 sed -f repl.txt singleDatesInFolder.txt 
+  491  21/09 18:19:04 nano repl.txt 
+  492  21/09 18:19:32 less repl.txt 
+  493  21/09 18:20:25 sed -f repl.txt singleDatesInFolder.txt 
+  494  21/09 18:26:21 nano repl.txt 
+  495  21/09 18:29:57 sed 's/_[0-9]{1}/0&$/' /singleDatesInFolder
+  496  21/09 18:30:12 sed 's/_[0-9]{1}/0&$/' /singleDatesInFolder.txt
+  497  21/09 18:31:07 sed 's/_[0-9]{1}/0&$/' ./singleDatesInFolder
+  498  21/09 18:31:22 sed 's/_[0-9]{1}/0&$/' singleDatesInFolder
+  499  21/09 18:31:40 sed 's/_[0-9]{1}/0&$/' singleDatesInFolder.txt
+  500  21/09 18:32:09 ll
+  501  21/09 18:32:16 cat singleDatesInFolder.txt 
+  502  21/09 18:32:27 ll
+  503  21/09 18:33:00 reset
+  504  21/09 18:33:08 ls *.txt
+  505  21/09 18:33:18 nano datesInFolder.txt 
+  506  21/09 18:33:26 nano singleDatesInFolder.txt 
+  507  21/09 18:34:00 sed -f repl.txt singleDatesInFolder.txt 
+  508  21/09 18:34:33 sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+  509  21/09 18:34:42 ls *.txt
+  510  21/09 18:34:49 nano folders2Create.txt 
+  511  21/09 18:37:34 $ sed 's/_\<[0-9]\>/0&/' folders2Create.txt
+  512  21/09 18:38:36 $ sed 's/\<[0-9]\>/0&/' folders2Create.txt
+  513  21/09 18:38:46 sed 's/\<[0-9]\>/0&/' folders2Create.txt
+  514  21/09 18:39:13 awk '{$2 = sprintf("%02d", $2); print}'
+  515  21/09 18:39:56 ls *.txt
+  516  21/09 18:40:28 sed -E 's/ ([0-9]) / 0\1 /' folders2Create.txt
+  517  21/09 18:41:09 sed -E 's/ ([0-9]\b) / 0\1 /' folders2Create.txt
+  518  21/09 18:42:51 cat folders2Create.txt | xargs -L 1 mkdir
+  519  21/09 18:42:55 ll
+  520  21/09 18:44:11 stat IMG_20190522_232259747.jpg
+  521  21/09 18:49:15 HISTTIMEFORMAT="%d/%m/%y %T "
+  522  21/09 18:49:18 history | grep "21/09"
+  523  21/09 18:50:59 nano .bashrc
+  524  21/09 18:52:00 HISTTIMEFORMAT="%d/%m/%y %T "
+  525  21/09 18:52:04 history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+  526  21/09 18:52:19 ls *.txt
+  527  21/09 18:52:38 nano historyOf2019-09-21-Samstag.txt 
+  528  21/09 18:52:58 HISTTIMEFORMAT="%d/%m/%y %T "
+  529  21/09 18:53:04 history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+  530  21/09 18:53:13 lks *.txt
+  531  21/09 18:53:20 ls *.txt
+  532  21/09 18:53:27 cat historyOf2019-09-21-Samstag.txt 
+  533  21/09 18:53:55 HISTTIMEFORMAT="%d/%m/%y %T "
+  534  21/09 18:53:57 history | grep $(date +%Y-%m-%d-%A)
+  535  21/09 18:55:10 HISTTIMEFORMAT="%d/%m/%y %T "
+  536  21/09 18:55:12 history | grep "21/09"
+  537  21/09 18:56:11 nano ~/.bashrc
+  538  21/09 18:59:05 HISTTIMEFORMAT="%d/%m %T "
+  539  21/09 18:59:05 history | grep $(date +%d/%m$) > historyOf-${date +%d.%m.%Y}.txt
+  540  21/09 18:59:25 ls *.txt
+  541  21/09 18:59:44 less historyOf2019-09-21-Samstag.txt 
+  542  21/09 19:00:32 HISTTIMEFORMAT="%d/%m %T "
+  543  21/09 19:00:35 history | grep $(date +%d/%m$) > historyOf-${date +%d-%m-%Y}.txt
+  544  21/09 19:01:59 xdg-open ~/.bashrc
+  545  21/09 19:02:49 HISTTIMEFORMAT="%d/%m %T "
+  546  21/09 19:02:51 history | grep $(date +%d/%m) > historyOf-$(date +%Y-%m-%d-%A).txt
+  547  21/09 19:03:02 ls *.txt
+  548  21/09 19:03:35 cat historyOf2019-09-21-Samstag.txt 
+  549  21/09 19:04:16 history | grep "21/09"
+  550  21/09 19:04:33 history | grep "21/09" > historyOf-2019-09-21-Samstag.txt 

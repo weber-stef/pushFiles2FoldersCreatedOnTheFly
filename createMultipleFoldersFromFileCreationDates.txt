@@ -1,0 +1,28 @@
+#1 printout the creationdate of every single file in the folder
+# since the Month and day are stored in column 7 and 8 print out only those
+ls -ls | awk  '{print $7,$8}'>datesInFolder.txt
+#2 since awk writes days < 10 as only one digit, add a leading 0
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt > singleDatesInFolder.txt
+#3 create a textfile containing the information about what to replace by what else
+echo
+"s/Jan/2019_01_/g
+s/Feb/2019_02_/g
+s/Mar/2019_03_/g
+s/Apr/2019_04_/g
+s/Mai/2019_05_/g
+s/Jun/2019_06_/g
+s/Jul/2019_07_/g
+s/Aug/2019_08_/g
+s/Sep/2019_09_/g
+s/Oct/2019_10_/g
+s/Nov/2019_11_/g
+s/Dec/2019_12_/g
+s/ //g
+">repl.txt
+#4 create a text file-list that contains the folders to be created
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+#5 delete line duplicates in file
+awk '!x[$0]++' folders2Create.txt > folderCreationList.txt
+cat folderCreationList.txt
+#6 create the folders in the list
+cat folderCreationList.txt | xargs -L 1 mkdir

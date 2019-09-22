@@ -1,0 +1,14 @@
+#1 create a list of all creation dates of the files contained in the foleder
+ls -l --time-style=iso | sort -k6 |  awk  '{print }'> datesInFolder.txt
+#2 delete line duplicates in file
+awk '!x[bash]++' datesInFolder.txt > singleDatesInfolder.txt
+#3 create the folders in the list
+cat singleDatesInfolder.txt | xargs -L 1 mkdir
+...
+#1 create a list of all creation dates of the files contained in the foleder
+ls -l --time-style=iso | sort -k6 |  awk  '{print }'> datesInFolder.txt
+#2 delete line duplicates in file
+awk '!x[bash]++' datesInFolder.txt > singleDatesInfolder.txt
+#3 create the folders in the list
+cat singleDatesInfolder.txt | xargs -L 1 mkdir
+...
