@@ -1,0 +1,1087 @@
+/bin/ls -ls | awk '{print $11,$7,$8}'
+/bin/ls -ls | awk '{print $12,$7,$8}'
+/bin/ls -ls | awk -F '{print $12,$7,$8}'
+/bin/ls -ls | awk  '{print $12,$7,$8}'
+/bin/ls -ls | awk  '{print $2,$7,$8}'
+/bin/ls -ls | awk  '{print $4,$7,$8}'
+/bin/ls -ls | awk  '{print $5,$7,$8}'
+/bin/ls -ls | awk  '{print $6,$7,$8}'
+/bin/ls -ls | awk  '{print $9,$7,$8}'
+/bin/ls -ls | awk  '{print $10,$7,$8}'
+/bin/ls -ls | awk  '{print $11,$7,$8}'
+/bin/ls -ls | awk  '{print $11,$7,$8}{format = "%m,%d"}'
+/bin/ls -ls | awk  '{print $11,$7,$8}'
+/bin/ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txt
+ll
+open datesInFolder.txt 
+xdg-open datesInFolder.txt 
+awk '!x[$0]++' datesInFolder.txt > singleDatesInFolder.txt
+xdg-open singleDatesInFolder.txt 
+/bin/ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txtreser
+rest
+reset
+sed -f repl.txt singleDatesInFolder.txt 
+ll
+find -iname rep
+find -iname "rep"
+ll
+reset
+nautilus .
+sed -f repl.txt singleDatesInFolder.txt 
+nano repl.txt 
+less repl.txt 
+sed -f repl.txt singleDatesInFolder.txt 
+nano repl.txt 
+sed 's/_[0-9]{1}/0&$/' /singleDatesInFolder
+sed 's/_[0-9]{1}/0&$/' /singleDatesInFolder.txt
+sed 's/_[0-9]{1}/0&$/' ./singleDatesInFolder
+sed 's/_[0-9]{1}/0&$/' singleDatesInFolder
+sed 's/_[0-9]{1}/0&$/' singleDatesInFolder.txt
+ll
+cat singleDatesInFolder.txt 
+ll
+reset
+ls *.txt
+nano datesInFolder.txt 
+nano singleDatesInFolder.txt 
+sed -f repl.txt singleDatesInFolder.txt 
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+ls *.txt
+nano folders2Create.txt 
+$ sed 's/_\<[0-9]\>/0&/' folders2Create.txt
+$ sed 's/\<[0-9]\>/0&/' folders2Create.txt
+sed 's/\<[0-9]\>/0&/' folders2Create.txt
+awk '{$2 = sprintf("%02d", $2); print}'
+ls *.txt
+sed -E 's/ ([0-9]) / 0\1 /' folders2Create.txt
+sed -E 's/ ([0-9]\b) / 0\1 /' folders2Create.txt
+cat folders2Create.txt | xargs -L 1 mkdir
+ll
+stat IMG_20190522_232259747.jpg
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep "21/09"
+nano .bashrc
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+ls *.txt
+nano historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+lks *.txt
+ls *.txt
+cat historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep "21/09"
+nano ~/.bashrc
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m$) > historyOf-${date +%d.%m.%Y}.txt
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+lks *.txt
+ls *.txt
+cat historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep "21/09"
+nano ~/.bashrc
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m$) > historyOf-${date +%d.%m.%Y}.txt
+ls *.txt
+less historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m$) > historyOf-${date +%d-%m-%Y}.txt
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)>historyOf$(date +%Y-%m-%d-%A).txt
+lks *.txt
+ls *.txt
+cat historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep $(date +%Y-%m-%d-%A)
+HISTTIMEFORMAT="%d/%m/%y %T "
+history | grep "21/09"
+nano ~/.bashrc
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m$) > historyOf-${date +%d.%m.%Y}.txt
+ls *.txt
+less historyOf2019-09-21-Samstag.txt 
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m$) > historyOf-${date +%d-%m-%Y}.txt
+xdg-open ~/.bashrc
+HISTTIMEFORMAT="%d/%m %T "
+history | grep $(date +%d/%m) > historyOf-$(date +%Y-%m-%d-%A).txt
+ls *.txt
+cat historyOf2019-09-21-Samstag.txt 
+history | grep "21/09"
+history | grep "21/09" > historyOf-2019-09-21-Samstag.txt 
+cat historyOf-2019-09-21-Samstag.txt 
+awk '{$2 = sprintf("%02d", $2); print}'
+ls *.txt
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' singleDatesInFolder.txt
+bk
+ll
+mkdir test
+for(i=0;i<12;i++){mkdir folder-i}
+cd test/
+mkdir folder{1..100}
+ll
+find . -type d -exec rm -rf {} +
+ll
+cd ..
+cd test
+touch myfile.txt
+mkdir folder{1..100}
+ll
+find . -type d -exec rm -rf {} +
+ll
+cd ..
+find . -type d -exec rm -rf {} +
+ll
+ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txt
+ll
+ls *.txt
+cat datesInFolder.txt 
+reset
+ls -ls | awk  '{print $11,$7,$8}'>datesInFolder.txt
+cat datesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt
+cat datesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt>datesInFolder.txt
+cat datesInFolder.txt 
+singleDatesInFolder
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt>singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt > singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt
+ls sed 's/\<[0-9]\>/0&/' datesInFolder.txt > singleDatesInFolder.txt
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt > singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+ls -ls | awk  '{print $11,$7,$8}'> datesInFolder.txt
+cat datesInFolder.txt
+sed -E 's/ ([0-9]\b) / 0\1 /' datesInFolder.txt > singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+sed -E -e 's/_([0-9])$/_00\1/' datesInFolder.txt > singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+ls -ls | awk -F, '{ print ("date -j -f \"%Y-%m-%d \" +\"%Y-%m-%d \" \""$8"\"")}' > datesInFolder.txt
+cat datesInFolder.txt 
+ls -ls | awk  '{print $11,$7,$8}'> datesInFolder.txt
+cat datesInFolder.txt 
+ls -ls | awk  '{print $7,$8}'> datesInFolder.txt
+ls -ls | awk  '{print $7,$8}'
+ls -ls | awk  '{printf $7,$8}'
+find -f .  "yyyy-mm-dd"
+awk '!x[$0]++' infile.txt > outfile.txt
+ls *.txt
+awk '!x[$0]++' folders2create.txt > folders2create.txt
+cat folders2Create.txt 
+cat singleDatesInFolder.txt sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+cat folders2Create.txt 
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+sed 's/\<[0-9]\>/0&/' datesInFolder.txt > singleDatesInFolder.txt
+cat singleDatesInFolder.txt 
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+cat folders2Create.txt 
+awk '!x[$0]++' folders2Create.txt > folderCreationList.txt
+cat folderCreationList.txt
+cat folderCreationList.txt | xargs -L 1 mkdir
+ll
+reset
+find . -type f -ls |grep '8 Jun'
+cat singleDatesInFolder.txt 
+cat datesInFolder.txt 
+ls -l --time-style=long-iso | sort -k6
+nano createMultipleFoldersFromFileCreationDates.txt 
+ls -ls | awk  '{print $7,$8}'>datesInFolder.txt
+cat datesInFolder.txt 
+echo
+"s/Jan/2019_01_/g
+019_02_/g
+019_03_/g
+019_04_/g
+019_05_/g
+019_06_/g
+019_07_/g
+019_08_/g
+019_09_/g
+019_10_/g
+019_11_/g
+019_12_/g
+
+txt
+cat repl.txt 
+echo "
+019_01_/g
+019_02_/g
+019_03_/g
+019_04_/g
+019_05_/g
+019_06_/g
+019_07_/g
+019_08_/g
+019_09_/g
+019_10_/g
+019_11_/g
+019_12_/g
+
+
+echo
+"
+019_01_/g
+019_02_/g
+019_03_/g
+019_04_/g
+019_05_/g
+019_06_/g
+019_07_/g
+019_08_/g
+019_09_/g
+019_10_/g
+019_11_/g
+019_12_/g
+
+
+> repl.txt
+cat repl.txt 
+tee -a repl.txt <<EOF
+019_01_/g
+019_02_/g
+019_03_/g
+019_04_/g
+019_05_/g
+019_06_/g
+019_07_/g
+019_08_/g
+019_09_/g
+019_10_/g
+019_11_/g
+019_12_/g
+
+
+cat repl.txt 
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+cat folders2Create.txt 
+sed -E 's/ ([0-9]\b) / 0\1 /' folders2Create.txt
+sed -e "s/\<\([0-9]\{1,1\}\)\>/0\1/" datesInFolder.txt
+ls *.txt
+xdg-open createMultipleFoldersFromFileCreationDates.txt 
+sed -f repl.txt singleDatesInFolder.txt > folders2Create.txt
+cat folders2Create.txt 
+nano createMultipleFoldersFromFileCreationDates.txt 
+awk '!x[$0]++' folders2Create.txt > folders2Create.txt
+cat folders2Create.txt
+awk '!x[$0]++' folders2Create.txt > folders2Create.txt
+cat folders2Create.txt 
+nano createMultipleFoldersFromFileCreationDates.txt 
+ll
+find . -type f  2019-06-08
+find -f .  "yyyy-mm-dd"
+find . -type f -ls |grep '8 Jun'
+find . -type f -ls |grep '8 Jun'reset
+find . -type f -ls |grep '2019-06-08'
+find . -type f -l --time-style=iso |grep '2019-06-08'
+find . -type f ls -l --time-style=iso |grep '2019-06-08'
+find . -type f | ls -l --time-style=iso |grep '2019-06-08'
+ls -l --time-style=iso |grep '2019-06-08'
+ls -l --time-style=iso
+ls -l --time-style=iso-long
+ls -l --time-style=long-iso
+find . -type f -ls -l --time-style=long-iso | grep '2019-06-08'
+find . -type f -ls --time-style=long-iso | grep '2019-06-08'
+find . -type f -crtime $(( ( $(date +%s) - $(date -d '2019-06-08' +%s) ) / 60 / 60 / 24 - 1 ))
+find . -type f -ctime $(( ( $(date +%s) - $(date -d '2019-06-08' +%s) ) / 60 / 60 / 24 - 1 ))
+find . -type f -ctime $(( ( $(date +%s) - $(date -d '2019-06-08' +%s) )))
+find . -type f -mtime $(( ( $(date +%s) - $(date -d '2019-06-08' +%s) ) / 60 / 60 / 24 - 1 ))
+find . -type f -mtime $(( ( $(date +%s) - $(date -d '2019-06-08' +%s) ) / 60 / 60 / 24 - 1 )) > ct.txt
+cat ct.txt 
+-ls --lct 
+ls --lct 
+ls --help
+ls -l
+ls --fulttime
+ls --fulltime
+ls --help
+ls --time-style=full-iso
+ls --time-style=long-iso
+ls --help
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7,$8}'
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $8}'>datesInFolder.txt
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7}'>datesInFolder.txt
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7,$8}'
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'>datesInFolder.txt
+cat datesInFolder.txt 
+cat << EOF >> pushAllFilesInFolderIntoFoldersByDate.txt
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'> datesInFolder.txt
+awk '!x[$0]++' datesInFolder.txt > singleDatesInfolder.txt
+cat singleDatesInfolder.txt | xargs -L 1 mkdir
+
+
+cat pushAllFilesInFolderIntoFoldersByDate.txt 
+cat datesInFolder.txt 
+awk '!x[bash]++' datesInFolder.txt > singleDatesInfolder.txt
+cat singleDatesInFolder.txt 
+cat datesInFolder.txt 
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'>datesInFolder.txt
+cat datesInFolder.txt 
+ll
+cat << EOF >> pushAllFilesInFolderIntoFoldersByDate.txt
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'> datesInFolder.txt
+awk '!x[$0]++' datesInFolder.txt > singleDatesInfolder.txt
+cat singleDatesInfolder.txt | xargs -L 1 mkdir
+
+
+find .  -type d -exec rm -r "{}" \;
+ll
+find .  -type d;
+ll
+reset
+ll
+reset
+ls --full-time
+find . -type f ls --time-style=long-iso | grep '2019-06-08'
+find . -type f ls --time-style=long-iso -exec grep '2019-06-08' {}\;
+find . -type f ls --time-style=long-iso
+find . -type f --time-style=long-iso
+find . -type f
+find . -type f | ls --time-style=long-iso
+ls --time-style=long-iso
+ls --time-style=iso
+ls -l --time-style=iso | sort -k6 
+find . -type f -ls --time-style=long-iso
+ls -l --time-style=iso-long
+ls -l --time-style=iso | sort -k6
+reset
+ls -l --time-style=iso | sort -k6 |  awk  '{echo $8}'
+ll
+ls -l --time-style=iso | sort -k6 |  awk  '{echo $8}'reset
+reset
+ls -l
+for i in 1 2 3 4 5; do    echo "Welcome $i times"; done
+find . -type f -exec echo "File is {$8}" \;
+find . -type f -exec echo "File is {awk  '{print $8}'}" \;
+find . -type f -exec awk  '{print $8}' \;
+for f in . ; do  mct=$8; echo mct; done
+ll
+find . -type f -ls |grep 'JUL'
+find . -type f -newermt 2017-09-24 -ls
+find . -type f -newerXY '2019-06-08' -ls
+find . -type f -newermt '2019-06-08' -ls
+find . -type f -newermt '2019-09-01' -ls
+find . -type f -mt '2019-09-01' -ls
+find . -type f -newermt 2017-09-24 ! -newermt 2017-09-25 -ls
+find . -type f -newermt 2017-09-10 ! -newermt 2017-09-11 -ls
+find . -type f -newermt 2017-09-10 ! -newermt 2017-09-12 -ls
+find . -type f -newermt 2017-09-10 -ls
+find . -type f -newermt 2019-09-10 ! -newermt 2019-09-11 -ls
+for f in . ; do  echo $f; done
+for f in . ; do  echo $1; done
+for f in . ; do  echo "jo"; done
+find . -type f -exec echo "File is {}" \;
+find . -type f -exec -ls -l --time-style=iso | sort -k6 |  awk  '{print $8} \;
+find . -type f -exec -ls -l --time-style=iso\;
+{}reset
+reset
+timewarp=2019-09-10;
+find . -type f -newermt $timewarp ! -newermt $timewarp+1 -ls
+timewarp=2019-09-10;
+find . -type f -newermt $timewarp  -ls
+-newermt --help
+timewarp=2019-09-10;
+find . -type f -newerBt $timewarp  -ls
+timewarp=date 2019-09-10;
+find . -type f -newermt $timewarp  -ls
+timewarp=date 2019-09-10;
+find . -type f -newermt $timewarp  -newermt $timewarp -d "+1 day" -ls
+timewarp=date 2019-09-10;
+find . -type f -newermt $timewarp  -newermt $timewarp --date "+1 day" -ls
+timewarp=date 2019-09-10;
+find . -type f -newermt $timewarp  -newermt $timewarp+1 -ls
+timewarp=date 2019-09-10;
+find . -type f -newermt $timewarp  -newermt $timewarp +1d -ls
+timewarp=date 2019-09-10;
+timeplus=$timewarp +1d;
+find . -type f -newermt $timewarp  -newermt $imeplus -ls
+timewarp=date 2019-09-10;
+timeplus=$timewarp +1d;
+find . -type f -newermt $timewarp  -newermt $imeplus -ls
+timewarp=date 2019-09-10;
+timeplus=$timewarp +1d;
+find . -type f -newermt $timewarp  -newermt $imeplus -lstimewarp=2019-09-10;
+timeplus=$(date +%m-%d-%Y -d "$timewarp + $i day")
+find . -type f -newermt $timewarp  -newermt $timeplus -ls
+reset
+timewarp=2019-09-10;
+timeplus=$(date +%m-%d-%Y -d "$timewarp + $i day")
+find . -type f -newermt $timewarp  -newermt $timeplus -ls
+imeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+find . -type f -newermt $timewarp  -newermt $timeplus -ls
+timewarp=2019-09-10
+for i in {0..8}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day");    echo "$timeplus"; done
+timewarp=2019-09-10
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+timewarp=2019-09-10
+do
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+done
+timewarp=2019-09-10
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day");    echo "$timeplus"; done
+find . -type f -mt '2019-09-01' -ls
+timewarp=2019-09-10;
+find . -type f -newermt $timewarp  -l
+timewarp=2019-09-10;
+find . -type f -newermt $timewarp  -ls
+timewarp=2019-09-10
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); done
+timewarp=2019-09-10
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -ls; done
+timewarp=2019-09-20
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -ls; done
+timewarp=2019-09-20
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -mv $i $timewarp; done
+timewarp=2019-09-20
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $timewarp \;; done
+cd 2019-09-2
+cd 2019-09-20
+ll
+cat datesInFolder.txt | xargs -L 1 mkdir
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'> datesInFolder.txtreset
+reset
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'> datesInFolder.txt
+cat datesInFolder.txt
+cat datesInFolder.txt | xargs -L 1 mkdir
+ll
+reset
+timewarp=2019-09-20
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $timewarp \;; done
+cd 2019-09-20
+ll
+reset
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'
+sed 's/^/_ /;{}/' datesInFolder.txt>dif.txt
+cat dif.txt 
+sed 's/^/_ /;' datesInFolder.txt>dif.txt
+cat dif.txt 
+reset
+sed 's/^/_/;{}/' datesInFolder.txt>dif.txt
+cat dif.txt 
+sed 's/^/_/;' datesInFolder.txt>dif.txt
+cat dif.txt 
+reset
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'> datesInFolder.txt
+cat datesInFolder.txt
+reset
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'
+reset
+find .  -type d -exec rm -r "{}" \;
+ll
+ls -l --time-style=iso-long | sort -k6 |  awk  '{print $8}'
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $8}
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $8}'
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'
+cat his
+cat historyOf-2019-09-21-Samstag.txt 
+ls -l --time-style=iso | sort -k6 |  awk  '{print $8}'
+ls -ls | awk '{print $7,$8,$9}'
+ls -ls | awk '{print $7,$8}'
+reset
+for i in .; do    awk  '{print $8} -exec echo {} \;
+
+for i in .; do    awk  '{print $8} -exec echo $i {} \;
+
+ls -l |  awk  '{print $8}'
+reset
+ls -l |  awk  '{print $7}
+  awk  '{print $7}'
+ls -l |  awk  '{print $7}
+  awk  '{print $7}'
+ls -l |  awk  '{print $7}
+  awk  '{print $6}'
+ls -l |  awk  '{print $7}
+  awk  '{print $8}'
+ls -l |  awk  '{print $8}'
+ls -l |  awk  '{print $7}'
+ls -l |  awk  '{print $6_$7}'
+ls -l |  awk  '{print $6,$7}'
+ls -l |  awk  '{print $6+$7}'
+ls -l |  awk  '{print $6$7}'
+ls -l |  awk  '{print $6}{_}{$7}'
+ls -l |  awk  '{print $6}'|awk '{print $7}'
+ls -l |  awk  '{print $6,$/}'
+ls -l |  awk  '{print $6,$7}'
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $6}
+ls -l --time-style=long-iso
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7}
+-time-style=long-iso | sort -k6 |  awk  '{print $6}'
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7}
+-time-style=long-iso | sort -k6 |  awk  '{print $7}'
+ls -l --time-style=long-iso | sort -k6 |  awk  '{print $7}
+-time-style=long-iso | sort -k6 |  awk  '{print $8}'
+ls --time-style=long-iso  -la | awk '{print $6, $7}'
+ls --time-style=long-iso  -la | awk '{print $6}'
+reset
+ls --time-style=long-iso  -la | awk '{print $6}'> datesInFolder.txt
+cat datesInFolder.txt
+awk '!seen[$0]++' datesInFolder.txt > sdif.txt
+cat sdif.txt 
+sed 's/^/_/;' sdif.txt>dif.txt; cat dif.txt
+sed -i 's/^/_/;'| sed -i 's/-/_/g' sdif.txt.txt; cat sdif.txt
+cat dif.txt 
+sed -i 's/^/_/;'| sed -i 's/-/_/g' sdif.txt; cat sdif.txt
+cat sdif.txt 
+sed -i 's/^/_/g;' sdif.txt; cat sdif.txt
+ll
+ls -d */
+ls -d
+mkdir test
+ls -d
+ll
+ls -d */
+ls *.txt
+nautilus .
+reset
+ls --time-style=long-iso  -la | awk '{print $6}'> folders2Create.txt; cat folders2Create.txt
+gawk -i inplace '!seen[$0]++' folders2Create.txt; cat folders2Create.txt
+awk inplace '!seen[$0]++' folders2Create.txt > f2c.txt; cat f2c.txt
+cat folders2Create.txt 
+awk '!seen[$0]++' folders2Create.txt > sdif.txt; cat sdif.txt
+sed -i 's/-/_/g' sdif.txt; 
+sed -i 's/^/_/g;' sdif.txt; cat sdif.txt
+cat sdif.txt | xargs -L 1 mkdir
+ls -d */
+OUTPUT=a\'b\"c\`d_123and_a_lot_more
+OUTPUT=$(echo "$OUTPUT"|tr -d "'\`\"")
+echo $OUTPUT
+timewarp=2019-09-20
+foldername=timewarp  sed s/-/_/g
+timewarp=2019-09-20
+foldername=timewarp sed -i 's/-/_/g'
+echo foldername
+timewarp=2019-09-20
+foldername=echo $timewarp sed -i 's/-/_/g'
+echo foldername;
+timewarp=2019-09-20
+foldername=echo $timewarp sed 's/-/_/g'
+echo foldername;
+timewarp=2019-09-20
+foldername=$timewarp
+echo foldername;
+timewarp=2019-09-20
+foldername=$timewarp
+echo $foldername;
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+timewarp=2019-09-20
+foldername="$timewarp(sed s/-/_/g)"
+echo $foldername
+timewarp=2019-09-20
+foldername=$timewarp
+echo $foldername
+timewarp=2019-09-20
+foldername="$(sed s/-/_/g <<<$timewarp)"
+echo $foldername
+timewarp=2019-09-20
+foldername="$(sed s/-/_/g <<<$timewarp)"
+foldername="_"+foldername;
+echo $foldername
+timewarp=2019-09-20
+foldername="$(sed s/-/_/g <<<$timewarp)"
+foldername="_"+$foldername;
+echo $foldername
+timewarp=2019-09-20
+foldername="$(sed s/-/_/g <<<$timewarp)"
+foldername="_"&$foldername;
+echo $foldername
+timewarp=2019-09-20
+foldername="$(sed s/-/_/g <<<$timewarp)"
+foldername="_"$foldername;
+echo $foldername
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+echo $foldername;
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $foldername/ \;; done
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $foldername/ \;; done
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $foldername/* \;; done
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec mv '{}' $foldername/{} \;; done
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+for i in {1..1}; do    timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day"); find . -type f -newermt $timewarp  ! -newermt $timeplus -exec ls -l \;; done
+reset
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + $i day")
+find . -type f -newermt $timewarp  ! -newermt $timeplus -exec ls -l \;
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+find . -type f -newermt $timewarp  ! -newermt $timeplus -ls -l \;
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+find . -type f -newermt $timewarp  ! -newermt $timeplus -ls \;
+find . -type f -newermt 2019-09-20  ! -newermt 2019-09-22 -ls -l\;
+find . -type f -newermt 2019-09-20  ! -newermt 2019-09-22 -ls \;
+find . -type f -newermt 2019-09-10 ! -newermt 2019-09-11 -ls
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo $timeplus
+find . -type f -newermt 2019-09-10 ! -newermt 2019-09-11 -ls
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timeplus ist: "$timeplus
+echo "timewarp ist: "$timewarp
+find . -type f -newermt 2019-09-10 ! -newermt 2019-09-11 -ls
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timeplus ist: "+$timeplus
+echo "timewarp ist: "+$timewarp
+find . -type f -newermt 2019-09-10 ! -newermt 2019-09-11 -ls
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timeplus ist: "$timeplus
+echo "timewarp ist: "$timewarp
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timeplus ist: "$timeplu
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timeplus ist: "$timeplus
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+timewarp=2019-09-20
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls -l\;
+cho $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+ll
+timewarp=2019-08-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+git init
+ll
+cat .gitignore
+cd testfiles/
+ll
+cd ..
+<<EOF > .gitignore
+
+
+iles/*.jpg
+
+cat .gitignore
+ll
+cat .gitignore 
+<<EOF >.gitignore
+
+
+iles/*.jpg
+
+cat .gitignore 
+echo
+"*.jpg
+
+tignore
+jpg
+*.mp4
+cat .gitignorecat "*.jpg
+
+tignore
+.gitignore <<EOL
+
+
+
+tignore
+cat .gitignore 
+echo *.jpg > .gitignore
+cat .gitignore 
+xdg-open .gitignore
+nano .gitignore 
+rm -rf .gitignore 
+touch .gitignore
+nano .gitignore 
+git remote add origin git@github.com:weber-stef/pushFiles2FoldersCreatedOnTheFly.git
+git push -u origin master
+ll
+git remote add origin git@github.com:weber-stef/pushFiles2FoldersCreatedOnTheFly.git
+git remote add origin git@github.com:weber-stef/pushFiles2FoldersCreatedOnTheFly.gitgit push -u origin master --force
+git push -u origin master --force
+git status
+gitty "create folders from timestamps in folder"
+git push --set-upstream origin master
+foldername=$timewarp
+timewarp=2019-08-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+timewarp=2019-08-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername \;
+cd _2019_08_22
+ll
+timewarp=2019-08-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+ll
+cd ..
+cd testfiles/
+ls --time-style=long-iso  -la | awk '{print $6}'> folders2Create.txt
+# delete duplicate entries
+awk '!seen[$0]++' folders2Create.txt > sdif.txt; cat sdif.txt
+#add "_" to textline - ^ - stands for start of the string/line - $ - stands for end of the string/line
+# replace "-" with "_" in textline
+sed -i 's/-/_/g' sdif.txt; 
+sed -i 's/^/_/g;' sdif.txt; cat sdif.txt
+cat sdif.txt | xargs -L 1 mkdir
+ll
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername/ \;
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername \;
+ll
+cd _2019_09_22/
+ll
+mv _2019_09_22 textfile.txt
+ll
+cd ..
+ll
+mv _2019_09_22 textfile.txt
+ll
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername/* \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername/ \;
+ll
+mkdir _2019-09-22
+ll
+rm -rf _2019-09-22
+mkdir _2019-09-22
+ll
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv '{}' $foldername/ \;
+ll
+cd _2019-09-22
+ll
+nautiölus .
+nautilus .
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv $foldername {}+
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldern
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+echo $foldername
+cd $foldername
+ll
+cd ..
+ll
+rm -rf textfile.txt/
+cat test.txt
+ll
+cd _2019_09_22
+timewarp=2019-09-22
+echo $timewarp sed 's/-/_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+echo $foldername 
+timewarp=2019-09-22
+echo $timewarp sed 's/-/\_/g'
+foldername=$timewarp
+foldername="_"$foldername
+echo $foldername;
+timewarp=2019-09-22
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timewarp=2019-09-22
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+cd _2019_09_22
+ll
+cd ..
+ll
+timewarp=2019-08-31
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+find . -type f -newermt $timewarp ! -newermt $timeplus -ls
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+ll
+cd _2019_08_31
+ll
+timewarp=2019-09-10
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+cd ..
+timewarp=2019-09-10
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+cd _2019_09_10
+ll
+ll ../*
+cd ..
+ll
+timewarp=2019-09-11
+foldername=`echo $timewarp | sed 's/-/_/g'`
+foldername="_"$foldername
+echo $foldername;
+timeplus=$(date +%Y-%m-%d -d "$timewarp + 1 day")
+echo "timewarp ist: "$timewarp
+echo "timeplus ist: "$timeplus
+#find and move - find /home -iname '*.zip' -exec mv '{}' /backup/ \;
+find . -type f -newermt $timewarp ! -newermt $timeplus -exec mv {} $foldername \;
+cd ..
+gitty "moving single files to according folders is working"
+cd ~
+cd bin
+mkdir bin
+cd bin
+cd ~
+pwd
+nano .bash_profile
+cd bin
+touch test
+nano test
+chmod u+x test
+cd ~
+test
+pwd
+cd bin
+ll
+chmod u+x test
+test
+cd ~
+which bash
+test
+cd bin
+touch yes
+nano yes
+chmod u+x yes
+yes
+cd bin
+ll
+rm -rf ./*
+ll
+echo #!/bin/bash
+who="World"
+echo Hello, $whoreset
+ll
+who="World"
+echo Hello, $who"*.jpg
+
+tignore
+jpg>myba
+ll
+nano myba
+ll
+cd ..
+myba
+chmod u+x myba
+cd bin
+chmod u+x myba
+cd ..
+myba
+cd bin
+myba
+chmod u+x myba
+myba
+nano myba
+chmod u+x myba
+myba
+cd ..
+history
+history > history_for_print.txt
+xdg-open history_for_print.txt 
+HISTTIMEFORMAT= history 10 | cut -c8-
+HISTTIMEFORMAT= history 200 | cut -c8- > histOf$date.txt
+ll
+cat histOf
+cat historyOf.txt
+ll
+cat histOf.txt
+HISTTIMEFORMAT= history 500 | cut -c8- > histOf${date}.txt
+ll
+ls -iname "hist"
+find -iname "hist" -ls
+ls hist*
+HISTTIMEFORMAT= history 500 | cut -c8- > histOf-500.txt
+ls hist*
+nano histOf-500.txt 
+HISTTIMEFORMAT= history 5000 | cut -c8- > histOf-5000.txt
